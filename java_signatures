@@ -1,0 +1,35 @@
+JAVA Signatures:
+// Schedule
+public void insertSchedule(
+    int userID,
+    int scheduleID,
+    CashFlowType type,
+    LocalDate startDate,
+    BigDecimal amount,
+    String payer,
+    RecurrenceRules recurrenceRule,
+    String category
+);
+
+// Schedule
+public List<Forecast> createForecast(
+    LocalDate throughDate
+);
+
+// RecurrenceRules
+public void createRecurrence(
+    RecurrenceType type,
+    Integer calendarDay,
+    Integer interval
+);
+
+// Balance
+public BigDecimal forecastBalance(
+    List<Forecast> forecasts,
+    LocalDate targetDate
+);
+
+// ChartCreator
+public void createChart(
+    List<Forecast> forecasts
+);
